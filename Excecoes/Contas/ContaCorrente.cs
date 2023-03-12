@@ -1,4 +1,5 @@
 ﻿using csharp_exception.Titular;
+using Excecoes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,7 @@ namespace csharp_exception.Contas
             }
             else
             {
-                return false;
+                throw new SaldoInsuficienteException("Saldo insuficiente!");
             }
         }
 
